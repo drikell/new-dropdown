@@ -174,12 +174,46 @@ position:static;
     font-size: small;
 }
 
+.carrosel
+{
+    width: 360px;
+    height:300px;
+    overflow: hidden;
+    margin-left:70%;
+    margin-top: -20%
+}
+
+.carrosel .fotos
+{
+width:500%;
+animation-name:animação;
+animation-duration: 20s;
+animation-iteration-count:infinite;
+}
+
+.carrosel .fotos img
+{
+width:19.8%
+}
+
+@keyframes animação
+{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    100%{margin-left: -400%;}
+}
 
 footer
 {
     text-align: center;
     font-size:14px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #comments
@@ -288,6 +322,7 @@ footer
 
 .botãoinsta
 {
+    background: rgba(134, 16, 208, 0.351);
 border-style:solid;
 border-width:2px;
 border-radius: 5px;
@@ -297,6 +332,10 @@ margin-left:650px;
 margin-top:-60px; 
 }
 
+.botãoinsta:hover
+{
+    background: #8914e2;
+}
 .insta1
 {
     margin-left:950px;
